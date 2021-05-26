@@ -1,16 +1,3 @@
-# TathyaCov : Detecting Fake Tweets in the times of COVID 19
-<p align="center">
-<img width="1000" height="200" alt="title" src="https://user-images.githubusercontent.com/19144385/87828882-9300a300-c89b-11ea-8e18-6325dfe88dfb.png">
-</p>
-
-<p align="center">
-  <b><ins> DEMO VIDEO: https://youtu.be/pdWoBxBu9-k </ins></b>
-</p>
-
-This repository contains the implementation of the paper : **"No Rumours Please! A Multi-Indic-Lingual Approach for Covid Fake-Tweet Detection"**. The system aims to classify whether a tweet contains a verifiable claim or not in real-time and has been specifically trained to detect COVID19 related fake news. We use AI based techniques to process the tweet text and use it, along with user features, to classify the tweets as either **REAL** or **FAKE**. We are handling tweets in three different languages: **English, Hindi and Bengali**. 
-<p align="center">
-  <img width="300" alt="flowchart" src="https://user-images.githubusercontent.com/19144385/87848329-cf182000-c8fc-11ea-9e1f-11d9466c5e6e.png">
-</p>
 
 ## Structure :
 
@@ -58,20 +45,5 @@ We design a simple static HTML page to obtain the tweet id/URL, as user input, a
 <img width="400" alt="gui_english" src="https://user-images.githubusercontent.com/19144385/87827205-086a7480-c898-11ea-8033-89a045036481.png"><br/>
 </p>
 
-## FLASK API:
-The GUI has been hosted in a IBM server (http://pca.sl.cloud9.ibm.com:1999/) which is accessible within IBM domain. <br/>
-process.py is a working code to host the GUI in the localhost. It can be easily modified to host the demo in any other server as well.
 
-## Citation :
-If you find our work useful, please cite our work as:
-```
-@misc{kar2020rumours,
-      title={No Rumours Please! A Multi-Indic-Lingual Approach for COVID Fake-Tweet Detection}, 
-      author={Debanjana Kar and Mohit Bhardwaj and Suranjana Samanta and Amar Prakash Azad},
-      year={2020},
-      eprint={2010.06906},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
 
