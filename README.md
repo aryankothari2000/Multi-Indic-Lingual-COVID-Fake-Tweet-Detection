@@ -3,15 +3,14 @@
 
 Each of the folders are equipped with detailed READMEs on how to run the scripts.
 
-- For dataset, refer to the [data](https://github.com/DebanjanaKar/Covid19_FakeNews_Detection/tree/master/data/Language_CSVs) folder
-- To scrape and annotate more dataset, refer to [scraping_tools](https://github.com/DebanjanaKar/Covid19_FakeNews_Detection/tree/master/scraping_tools) folder (We encourage extending the dataset to accomadate more annotations in languages explored and unexplored in this work)
-- For the transformer based classifiers, refer to the [transformer_classifiers](https://github.com/DebanjanaKar/Covid19_FakeNews_Detection/tree/master/transformer_classifiers) folder
-- For ML based models and GUI implementation, refer to the [GUI_MLModels](https://github.com/DebanjanaKar/Covid19_FakeNews_Detection/tree/master/GUI_MLModels) folder
-
+- For dataset, refer to the data folder
+- To scrape and annotate more dataset, refer to scraping_tools folder (We encourage extending the dataset to accomadate more annotations in languages explored and unexplored in this work)
+- For the transformer based classifiers, refer to the transformer_classifiersfolder
+- For ML based models and GUI implementation, refer to the GUI_MLModels
 We next provide a very brief overview of the dataset and the methods used in our work in the following sections.
 
 ## Dataset:
-We create the **Indic-covidemic tweet dataset** and use it for training and testing purpose. We consider the English tweets from the [Infodemic dataset](https://github.com/firojalam/COVID-19-tweets-for-check-worthiness) and scrape Bengali and Hindi tweets from Twitter which are related to COVID-19. Fresh annotations were done and incorporated to create the larger Indic dataset for this task. For this purpose, [scraping and parsing tools](https://github.com/DebanjanaKar/Covid19_FakeNews_Detection/tree/master/scraping_tools) were created which might be helpful to further mine Indic data. We have published our annotated dataset for research purposes which can be found [here](https://github.com/DebanjanaKar/Covid19_FakeNews_Detection/tree/master/data/Language_CSVs).
+We create the **Indic-covidemic tweet dataset** and use it for training and testing purpose. We consider the English tweets from the [Infodemic dataset](https://github.com/firojalam/COVID-19-tweets-for-check-worthiness) and scrape Bengali and Hindi tweets from Twitter which are related to COVID-19. Fresh annotations were done and incorporated to create the larger Indic dataset for this task. For this purpose, scraping and parsing tools were created which might be helpful to further mine Indic data. We have published our annotated dataset for research purposes which can be found [here](https://github.com/aryankothari2000/Multi-Indic-Lingual-COVID-Fake-Tweet-Detection/tree/master/data/Language_CSVs).
 
 ## Method:
 We experimented with two different models to handle the tweet classification. In one setting, we consider a mono-lingual model, for handling English tweets. We extend the concept, by replacing the classifier with the multi-lingual one, where we consider tweets from English, Hindi and Bengali languages, as of now. The main essence of our proposed approach lies in the features we have used for the classification task, the different classifiers and  their  corresponding  adaptation  done  for  identifying  the fake tweets.
